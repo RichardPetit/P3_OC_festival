@@ -1,10 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Les Films de Plein Air</title>
 </head>
 <body>
+    <header>
+        <div class="bg-cover">
+            <div class="ml-0 mr-0 pb-1">
+                <nav class="navbar navbar-expand-md">
+                    <button class="navbar-toggler ml-auto" data-target="#my-nav" data-toggle="collapse"
+                            aria-controls="my-nav" aria-expanded="false" onclick="myFunction(this)"
+                            aria-label="Toggle navigation">
+                        <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span>
+                    </button>
+                    <div id="my-nav" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-active" href="liste.html">Liste des films</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="agenda.html">Programmation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="inscription.html">Inscription</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <h2 class="logo">Les Films de Plein Air</h2>
+            <nav class="nav nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://facebook.com/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                </li>
+            </nav>
+        </div>
+    </header>
 
+    <div class="container mt-3">
+        <main>
+            <div class="row">
+                <div class="col-12">
+            <h4>Notre sélection de films</h4>
+            <p>Pour vous nous avons sélectionné des films, français et internationaux, réputé pour faire parti des meilleurs dans leur genre.</p>
+            <p>Salués par la critique et le public à leur sortis au cinéma, ou directement en DVD/VOD/Streaming.
+                Cette sélection comprend en effet de bons films, culte pour la plupars, que nous projeterons dans leur intégralité durant le festival.
+                Vous trouverez forcément parmi eux un film à voir seul, en famille ou entre amis.</p>
+                </div>
+            </div>
+            <hr class="separator" />
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="film-list">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <a href="details-joker.html"><img src="Images/joker.png" alt="Affiche du film Joker"></a>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="description">
+                                    <h5>Joker</h5>
+                                    <p>Dans les années 1980, à Gotham City, Arthur Fleck, un comédien de stand-up raté est
+                                        agressé alors qu'il ère dans les rues de la ville déguisé en clown.
+                                        Méprisé de tous et bafoué, il bascule peu à peu dans la folie pour devenir le Joker, un
+                                        dangereux tueur psychotique.</p>
+                                    <div class="btn btn-info"><a href="details-joker.html">Détails</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="film-list">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <a href="#"><img src="Images/LaHaine-2.jpg" alt="Affiche du film La Haine"></a>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="description">
+                                    <h5>La Haine</h5>
+                                    <p>Après une bavure policière, une nuit d'émeutes éclate entre les jeunes de la cité
+                                        des Muguets et la police. Parmi ces jeunes aveuglés par la haine, 3 amis vont
+                                        vivre la journée la plus importante de leur vie. Aujourd'hui, ils ne sont plus
+                                        que 3... Ils sont 4 avec le Smith & Wesson 44 chromé qu'un des policiers a égaré
+                                        pendant les émeutes.</p>
+                                    <div class="btn btn-info"><a href="#">Détails</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="film-list">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <a href="details-drive.html"><img src="Images/drive.jpg" alt="Affiche du film Drive"></a>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="description">
+                                    <h5>Drive</h5>
+                                    <p>Un jeune homme solitaire, The Driver, conduit le jour à Hollywood pour le cinéma
+                                        en tant que cascadeur et la nuit pour des truands.
+                                        Ultra professionnel et peu bavard, il a son propre code de conduite.
+                                        Jamais il n'a pris part aux crimes de ses employeurs autrement qu'en conduisant
+                                        - et au volant, il est le meilleur !</p>
+                                    <div class="btn btn-info"><a href="details-drive.html">Détails</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="film-list">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <a href="#"><img src="Images/interstellar.jpeg" alt="Affiche du film Interstellar"></a>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="description">
+                                    <h5>Interstellar</h5>
+                                    <p>Dans un futur proche, la Terre est de moins en moins accueillante pour l'humanité
+                                        qui connaît une grave crise alimentaire. Le film raconte les aventures d'un
+                                        groupe d'explorateurs qui utilise une faille récemment découverte dans
+                                        l'espace-temps afin de repousser les limites humaines et partir à la conquête
+                                        des distances astronomiques dans un voyage interstellaire.</p>
+                                    <div class="btn btn-info"><a href="#">Détails</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div  class="ftr">
+            <div class="contact">
+                <h4>Nous trouver</h4>
+                <p><i class="fas fa-map-marker-alt"> : 145 rue la Fayette</i></p>
+                <p><i class="fas fa-phone"> : 01.48.12.01.02</i></p>
+                <p><i class="fas fa-at"> : contact@associationlfpa.com</i></p>
+
+            </div>
+            <div class="social-network">
+                <h4>Nous suivre</h4>
+                <div class="d-flex justify-content-between">
+                    <a class="nav-link" href="https://facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="nav-link" href="https://twitter.com/" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="nav-link" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h4>Je m'inscris à la newslettre</h4>
+                <input type="text" placeholder="Votre courriel" />
+                <br>
+                <input type="checkbox" name="contitions" id="conditions">
+                <label for="conditions">J'accepte les conditions générales d'utilisation</label>
+                <br>
+                <div class="btn btn-info"><a href="#">Je m'inscris</a></div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

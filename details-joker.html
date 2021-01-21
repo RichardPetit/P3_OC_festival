@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,9 +21,7 @@
     <div class="bg-cover">
         <div class="ml-0 mr-0 pb-1">
             <nav class="navbar navbar-expand-md">
-                <button class="navbar-toggler ml-auto" data-target="#my-nav" data-toggle="collapse"
-                        aria-controls="my-nav" aria-expanded="false" onclick="myFunction(this)"
-                        aria-label="Toggle navigation">
+                <button class="navbar-toggler ml-auto" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" onclick="myFunction(this)" aria-label="Toggle navigation">
                     <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span>
                 </button>
                 <div id="my-nav" class="collapse navbar-collapse">
@@ -33,7 +33,7 @@
                             <a class="nav-link" href="liste.html">Liste des films</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-active" href="agenda.html">Programmation</a>
+                            <a class="nav-link" href="agenda.html">Programmation</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="inscription.html">Inscription</a>
@@ -60,84 +60,41 @@
 </header>
 
 <main>
-
-    <div class="film_card">
-        <div class="info_section">
-            <div class="film_header">
-                <img class="petite_affiche" src="Images/ajoker.jpg"/>
-                <h2>Joker</h2>
-                <p>De Todd Phillips <br>
-                    Avec Joaquin Phoenix, Robert De Niro, Zazie Beetz <br>
-                    Nationalités Américain, Canadien</p>
+    <h3 class="titre_details">Joker</h3>
+        <div class="film_details">
+            <img  class="petite_affiche" src="Images/ajoker.jpg" alt="Affiche du film Joker">
+            <div class="description_film">
+                <h5>Synopsis :</h5>
+                <p>L'histoire se déroule en 1981, à Gotham City. Arthur Fleck travaille dans une agence de clowns.
+                    Méprisé et incompris par ceux qui lui font face, il mène une morne vie en marge de la société
+                    et habite dans un immeuble miteux avec sa mère Penny.
+                    Un soir, il se fait agresser dans le métro par trois traders de Wayne Enterprise alcoolisés
+                    qui le brutalisent, le poussant à les tuer en retour.
+                    Son geste inspire à une partie de la population l'idée de s'en prendre eux aussi aux puissants.
+                    Dans cette société décadente, Arthur bascule peu à peu dans la folie et finit par devenir le Joker,
+                    un dangereux tueur psychopathe victime d'hallucinations et le plus grand criminel de Gotham City.
+                </p>
             </div>
-            <div class="film_horaire">
-                <br>
-                <p><i class="far fa-calendar-alt"></i> 05/08/2011 <br><i class="far fa-clock"></i> 18h 00 <br> <i class="fas fa-stopwatch"></i> 2h 02min</p>
-            </div>
-            <div class="btn"><a href="details-joker.html">Plus de détails</a></div>
         </div>
-        <div class="img_back joker_back"></div>
+    <div class="fiche_technique">
+        <h5>Fiche technique :</h5>
+        <p>9 octobre 2019 / 2h 02min / Drame <br>
+            Réalisateur : Todd Phillips <br>
+            Acteurs/Actrices : Joaquin Phoenix, Robert De Niro, Zazie Beetz, Frances Conroy, Brett Cullen,
+            Shea Whigham, Bill Camp, Douglas Hodge.<br>
+            Distributeur : Warner Bros <br>
+            Récompenses : <br> Oscar , BAFTA Awards, et Golden Globes 2020 du Meilleur acteur  (Joaquin Phoenix),
+            Oscar, BAFTA Awards et Golden Globes 2020 de la Meilleure musique (Hildur Guðnadóttir),
+            Lion d'Or (Todd Phillips).
+        </p>
     </div>
-
-    <div class="film_card">
-        <div class="info_section">
-            <div class="film_header">
-                <img class="petite_affiche" src="Images/adrive.jpg"/>
-                <h2>Drive</h2>
-                <p>De Nicolas Winding Refn <br>
-                    Avec Ryan Gosling, Carey Mulligan, Bryan Cranston <br>
-                    Nationalités Américain</p>
-            </div>
-            <div class="film_horaire">
-                <br>
-                <p><i class="far fa-calendar-alt"></i> 05/08/2011 <br> <i class="far fa-clock"></i> 21h 00 <br> <i class="fas fa-stopwatch"></i> 1h 40min</p>
-            </div>
-            <div class="btn"><a href="details-drive.html">Plus de détails</a></div>
-        </div>
-        <div class="img_back drive_back"></div>
+    <div class="trailer">
+        <h5>Bande annonce :</h5>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OoTx1cYC5u8?start=6" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
     </div>
-
-    <div class="film_card">
-        <div class="info_section">
-            <div class="film_header">
-                <img class="petite_affiche" src="Images/lahaine.jpg"/>
-                <h2>La Haine</h2>
-                <p>De Mathieu Kassovitz<br>
-                    Avec Vincent Cassel, Hubert Koundé, Saïd Taghmaoui<br>
-                    Nationalité français</p>
-            </div>
-            <div class="film_horaire">
-                <br>
-                <p><i class="far fa-calendar-alt"></i> 06/08/2011 <br><i class="far fa-clock"></i> 18h 00 <br> <i class="fas fa-stopwatch"></i> 1h 35min</p>
-            </div>
-
-            <div class="btn "><a href="#">Plus de détails</a></div>
-
-        </div>
-        <div class="img_back lh_back"></div>
-    </div>
-
-    <div class="film_card">
-        <div class="info_section">
-            <div class="film_header">
-                <img class="petite_affiche" src="Images/interstelllar.jpg"/>
-                <h2>Interstellar</h2>
-                <p>De Christopher Nolan <br>
-                    Avec Matthew McConaughey, Anne Hathaway, Michael Caine<br>
-                    Nationalités américain, britannique</p>
-            </div>
-            <div class="film_horaire">
-                <br>
-                <p><i class="far fa-calendar-alt"></i> 05/08/2011 <br><i class="far fa-clock"></i> 21h 00 <br> <i class="fas fa-stopwatch"></i> 2h 49min</p>
-            </div>
-
-            <div class="btn "><a href="#">Plus de détails</a></div>
-
-        </div>
-        <div class="img_back inter_back"></div>
-    </div>
-
-
 </main>
 
 
@@ -170,7 +127,9 @@
             <br>
             <div class="btn btn-info"><a href="#">Je m'inscris</a></div>
         </div>
+
     </div>
+
 </footer>
 </body>
 </html>

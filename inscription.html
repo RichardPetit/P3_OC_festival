@@ -1,10 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Les Films de Plein Air</title>
 </head>
 <body>
+<header>
+    <div class="bg-cover">
+        <div class="ml-0 mr-0 pb-1">
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler ml-auto" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" onclick="myFunction(this)" aria-label="Toggle navigation">
+                    <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="liste.html">Liste des films</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="agenda.html">Programmation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-active" href="inscription.html">Inscription</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <h2 class="logo">Les Films de Plein Air</h2>
+        <nav class="nav nav-fill">
+            <li class="nav-item">
+                <a class="nav-link" href="https://facebook.com/" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            </li>
+        </nav>
+    </div>
+</header>
 
+<main>
+    <div class="form_card">
+        <h1> Je m'inscris </h1>
+        <div class="underline">
+        </div>
+        <form action="#" method="post" id="contact_form">
+            <div class="name">
+                <label for="name"></label>
+                <input type="text" placeholder="Mon nom" name="name" id="name_input" required>
+            </div>
+            <div class="forname">
+                <label for="forname"></label>
+                <input type="text" placeholder="Mon prénom" name="forname" id="forname_input" required>
+            </div>
+            <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="Mon courriel" name="email" id="email_input" required>
+            </div>
+            <div class="telephone">
+                <label for="name"></label>
+                <input type="text" placeholder="Mon numéro de téléphone" name="telephone" id="telephone_input" required>
+            </div>
+            <div class="choix_film">
+                <label for="choix_film"></label>
+                <select placeholder="Choix film" name="subject" id="subject_input" required>
+                    <option disabled hidden selected>Choisir un film</option>
+                    <option>Joker</option>
+                    <option>Drive</option>
+                    <option>La Haine</option>
+                    <option>Interstellar</option>
+                </select>
+            </div>
+            <label for="nbr_participate"></label>
+            <input type="number" placeholder="Sélectionner le nombre de participant (1-10)" name="nbr_participate" id="nbr_participate" min="1" max="10">
+
+            <div class="cgu">
+                <input type="checkbox"> En cochant cette case , j'accepte de recevoir des informations concernant l'association. </input>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Valider" id="form_button" />
+            </div>
+        </form>
+    </div>
+</main>
+
+
+<footer>
+    <div  class="ftr">
+        <div class="contact">
+            <h4>Nous trouver</h4>
+            <p><i class="fas fa-map-marker-alt"> : 145 rue la Fayette</i></p>
+            <p><i class="fas fa-phone"> : 01.48.12.01.02</i></p>
+            <p><i class="fas fa-at"> : contact@associationlfpa.com</i></p>
+
+        </div>
+        <div class="social-network">
+            <h4>Nous suivre</h4>
+            <div class="d-flex justify-content-between">
+                <a class="nav-link" href="https://facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="nav-link" href="https://twitter.com/" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="nav-link" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h4>Je m'inscris à la newslettre</h4>
+            <input type="text" placeholder="Votre courriel" />
+            <br>
+            <input type="checkbox" name="contitions" id="conditions">
+            <label for="conditions">J'accepte les conditions générales d'utilisation</label>
+            <br>
+            <div class="btn btn-info"><a href="#">Je m'inscris</a></div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,98 +1,165 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Les Films de Plein Air</title>
 </head>
 <body>
-    <header>
-        <div class="bg-cover">
-            <div class="ml-0 mr-0 pb-1">
-
-
-
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="liste.html">Liste des films</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="agenda.html">Agenda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="inscription.html">Inscription</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <nav class="navbar navbar-expand-md">
-                    <button class="navbar-toggler ml-auto" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" onclick="myFunction(this)" aria-label="Toggle navigation">
-                        <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span>
-                    </button>
-                    <div id="my-nav" class="collapse navbar-collapse">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Accueil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="liste.html">Liste des films</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="agenda.html">Agenda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="inscription.html">Inscription</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <h2 class="logo">Les Films de Plein Air</h2>
-            <nav class="nav nav-fill">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://facebook.com/" target="_blank"><i
-                            class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://twitter.com/" target="_blank"><i
-                            class="fab fa-twitter"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
-                </li>
+<header>
+    <div class="bg-cover">
+        <div class="ml-0 mr-0 pb-1">
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler ml-auto" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" onclick="myFunction(this)" aria-label="Toggle navigation">
+                    <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-active" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="liste.html">Liste des films</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="agenda.html">Programmation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inscription.html">Inscription</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
-    </header>
+        <h2 class="logo">Les Films de Plein Air</h2>
+        <nav class="nav nav-fill">
+            <li class="nav-item">
+                <a class="nav-link" href="https://facebook.com/" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            </li>
+        </nav>
+    </div>
+</header>
+<div class="container">
+<main>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="3"></li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="Images/festival.jpg" alt="Affiche du film joker">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Images/joker.png" alt="Affiche du film joker">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Images/drive.jpg" alt="Affiche du film drive">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Images/LaHaine-2.jpg" alt="Affiche du film la haine">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Images/interstellar.jpeg" alt="Affiche du film interstellar">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
     <div class="presentation" >
         <h3>L'association</h3>
-        <p>Jennifer Edwards est l'organisatrice du festival des Films de Plein Air. Elle ambitionne de sélectionner et de projeter des films d'auteur en plein air du 5 au 8 août au parc Monceau à Paris.</p>
-        <p>Son association vient juste d'être créée et elle dispose d'un budget limité. Elle a besoin de communiquer en ligne sur son festival, d'annoncer les films projetés et de recueillir les réservations.</p>
+        <p>Jennifer Edwards est l'organisatrice du festival des Films de Plein Air. Elle ambitionne de sélectionner et
+            de projeter des films d'auteur en plein air du 5 au 8 août au parc Monceau à Paris.
+        </p>
+        <p>Inaugurée en 2020 et située en plein cœur de Paris, l'associations des Films de Plein Air (LFPA) est
+            une association à but non lucratif. Elle a pour objectif de promouvoir le cinéma et faciliter les échanges
+            entre experts, amateurs ou total néophyte pour partager ses coups de cœur, et débattre sur les œuvres du
+            7eme art.
+        </p>
+        <p>Espace de rencontre, de réflexion et de conseil, elle souhaite s’affirmer au fil du temps et étrendre sa
+            notoriété et devenir un incontournable au sein de la capitale.
+        </p>
     </div>
 
     <div class="container">
-        <div class="liste">
-            <img src="Images/inception.jpg" alt="image d'une ville dans le film inception">
-            <div class="btn btn-info"><a href="#">Voir les films</a></div>
-        </div>
-        <div class="agenda">
-            <img src="Images/inscription2.jpg" alt="photo d'une main qui écrit dans un livre">
-            <div class="btn btn-info"><a href="#">Voir l'agenda</a></div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 item">
+                <div class="card item-card card-block">
+                    <img src="Images/inception.jpg" alt="photo d'une ville dans le film inception">
+                    <div class="btn btn-info"><a href="#">Voir les films</a></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 item">
+                <div class="card item-card card-block">
+                    <img src="Images/pellicule.jpg" alt="photo d'une bobine de film">
+                    <div class="btn btn-info"><a href="#">Programmation</a></div>
+                </div>
+            </div>
+
         </div>
     </div>
-<p>ok</p>
+</main>
+</div>
 
+<footer>
+    <div  class="ftr">
+        <div class="contact">
+            <h4>Nous trouver</h4>
+            <p><i class="fas fa-map-marker-alt"> : 145 rue la Fayette</i></p>
+            <p><i class="fas fa-phone"> : 01.48.12.01.02</i></p>
+            <p><i class="fas fa-at"> : contact@associationlfpa.com</i></p>
 
+        </div>
+        <div class="social-network">
+            <h4>Nous suivre</h4>
+            <div class="d-flex justify-content-between">
+                <a class="nav-link" href="https://facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="nav-link" href="https://twitter.com/" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="nav-link" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h4>Je m'inscris à la newslettre</h4>
+            <input type="text" placeholder="Votre courriel" />
+            <br>
+            <input type="checkbox" name="contitions" id="conditions">
+            <label for="conditions">J'accepte les conditions générales d'utilisation</label>
+            <br>
+            <div class="btn btn-info"><a href="#">Je m'inscris</a></div>
+        </div>
+
+    </div>
+
+</footer>
 </body>
 </html>
