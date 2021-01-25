@@ -58,7 +58,7 @@
         </nav>
     </div>
 </header>
-
+<div class="container">
 <main>
     <h3 class="titre_details">Joker</h3>
         <div class="film_details">
@@ -89,47 +89,40 @@
         </p>
     </div>
     <div class="trailer">
-        <h5>Bande annonce :</h5>
+        <h5>Bande annonce</h5>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/OoTx1cYC5u8?start=6" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
         </iframe>
     </div>
 </main>
+</div>
 
 
 <footer>
-    <div  class="ftr">
-        <div class="contact">
-            <h4>Nous trouver</h4>
-            <p><i class="fas fa-map-marker-alt"> : 145 rue la Fayette</i></p>
-            <p><i class="fas fa-phone"> : 01.48.12.01.02</i></p>
-            <p><i class="fas fa-at"> : contact@associationlfpa.com</i></p>
-
-        </div>
-        <div class="social-network">
-            <h4>Nous suivre</h4>
-            <div class="d-flex justify-content-between">
-                <a class="nav-link" href="https://facebook.com/" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a class="nav-link" href="https://twitter.com/" target="_blank"><i
-                        class="fab fa-twitter"></i></a>
-                <a class="nav-link" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col-md-6 col-12 mb-3">
+                <h4 class="mb-3">Nous trouver</h4>
+                <p><i class="fas fa-map-marker-alt mr-2"></i> 145 rue la Fayette</p>
+                <p><i class="fas fa-phone mr-2"></i> 01.48.12.01.02</p>
+                <p><i class="fas fa-at mr-2"></i> contact@associationlfpa.com</p>
+            </div>
+            <div class="col-md-6 col-12">
+                <h4 class="mb-3">Newsletter</h4>
+                <p>
+                    <input type="text" placeholder="Votre courriel" class="form-control"/>
+                </p>
+                <p>
+                    <input type="checkbox" name="contitions" id="conditions" class="mr-1">
+                    <label for="conditions">J'accepte les conditions générales d'utilisation</label>
+                </p>
+                <p class="text-right">
+                    <button class="btn btn-secondary">Je m'inscris</button>
+                </p>
             </div>
         </div>
-        <div class="newsletter">
-            <h4>Je m'inscris à la newslettre</h4>
-            <input type="text" placeholder="Votre courriel" />
-            <br>
-            <input type="checkbox" name="contitions" id="conditions">
-            <label for="conditions">J'accepte les conditions générales d'utilisation</label>
-            <br>
-            <div class="btn btn-info"><a href="#">Je m'inscris</a></div>
-        </div>
-
     </div>
-
 </footer>
 </body>
 </html>
